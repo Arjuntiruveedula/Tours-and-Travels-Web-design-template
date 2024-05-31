@@ -1,0 +1,88 @@
+*{
+  text-align: center;
+  justify-content: center;
+}
+
+.descript h1{
+  font-size: 45px;
+  font-weight: 800;
+}
+
+.descript p{
+  font-size: 18px;
+  margin-top: -1.5rem;
+  text-align: center;
+}
+
+
+.first-des{
+  display: flex;
+  flex-direction: row ;
+  justify-content: space-around;
+  align-items: center;
+  margin: 5rem 7rem;
+  gap: 3rem;
+}
+
+.first-des2{
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-around;
+  align-items: center;
+  margin: 1rem 7rem;
+  gap: 3rem;
+}
+.image{
+  position: relative;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  z-index: -99;
+}
+.image img{
+  width: 49%;
+  height: 350px;
+  object-fit: cover;
+  border-radius: .5rem;
+  box-shadow: 1px -1px 6px rgb(0, 0, 0.19);
+}
+.image img:nth-child(2){
+  position: absolute;
+  right: 0px;
+  top: -8%;
+}
+.first-des div,.first-des2 div{
+  width: 45%;
+}
+ h2{
+  font-size: 33px;
+  font-weight: 750;
+  text-align: start;
+}
+ p{
+  font-size: 22px;
+  text-align: start;
+  opacity: .7;
+}
+
+@media screen and (max-width:850px) {
+  .first-des,.first-des2{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem 0rem;
+  }
+  .first-des .image,.first-des2 .image{
+    width: 95%;
+    margin-top: 2rem ;
+  }
+
+  
+  .first-des div,.first-des2 div{
+    width: 90%;
+  }
+}

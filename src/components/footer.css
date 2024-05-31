@@ -1,0 +1,51 @@
+.foot{
+  background-color: black;
+  color: white;
+  padding: 3rem 7rem;
+  margin-top: 2rem;
+}
+
+.foot p{
+  opacity: 1;
+}
+
+.top-foot{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.top-foot h2{
+  font-weight: 900;
+  font-size: 40px;
+  margin: 0;
+}
+.icons{
+  display: flex;
+  justify-content: space-between;
+  
+}
+.icons a{
+  font-size: 30px;
+  color: white;
+  margin: 9px;
+}
+
+.bottom-foot{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: baseline;
+  flex-wrap: wrap;
+}
+
+@media screen and (max-width:850px){
+  .foot{
+    padding: 4rem 3rem;
+  }
+  
+  .bottom-foot .j{
+    width: 50%;
+
+  }
+}

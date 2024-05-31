@@ -1,0 +1,135 @@
+
+.navbar{
+  display: flex;
+  align-items: center;
+  position: fixed;
+  justify-content: space-around;
+  text-decoration: none;
+  background-color:white ;
+  border-radius: 15px;
+  box-shadow: 0 1PX 6PX 0;
+  height: 100px;
+  z-index: 200;
+  margin: 20px;
+  margin-left: 5%;
+  width: 90%;
+}
+.navbar .logoName{
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  cursor: pointer;
+  font-size: 39px;
+  font-weight: 900;
+  text-decoration: none;
+}
+.nav-menu{
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  list-style: none;
+
+  white-space: wrap;
+  grid-gap: 20px;
+  align-items: baseline;
+ 
+  
+
+}
+.humb i{
+  cursor: pointer;
+}
+.navlinks{
+  padding: 9px 20px;
+  white-space:  nowrap;
+  border-radius: 3px;
+  color: black;
+  transition: 0.3s ease;
+  align-items: center;
+}
+.navlinks:hover a,
+.navlinks:hover{
+  background-color: black;
+  color: white;
+  
+}
+.nav-menu a{
+  text-decoration: none;
+  font-weight: 700;
+  color: black;
+  font-size: 23px;
+  
+  transition: 0.4s ease-in-out;
+
+
+}
+.mobilenav{
+  display: none;
+}
+button{
+  padding: 8px;
+  font-size: 20px;
+  font-weight: 700;
+  border-radius: 4px;
+  border: none;
+  background-color: rgb(198, 196, 196);
+  cursor: pointer;
+  transition: 0.3s ease;
+  white-space:  nowrap;
+  width: 50%;
+}
+button:hover{
+  background-color: black;
+  color:#fff
+}
+.humb{
+  display: none;
+  font-size: 20px;
+}
+@media screen and (max-width:1020px){
+  .navbar .logoName{
+    margin-top: 19px;
+  }
+  .navbar{
+    width: 90%;
+    margin: 3% 5%;
+  }
+  
+  .navlinks:hover a,
+.navlinks:hover{
+  background-color: black;
+  color: white;
+  padding: 1rem 3rem;
+}
+  .nav-menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: white;
+    position: absolute;
+    margin: 30px;
+    border-radius: 10px;
+    left:100%;
+    right: 0;
+    opacity: 0;
+    padding: 30px 30px;
+    transition: 0.4s ease-in-out;
+  }
+  .nav-menu.active{
+    left: 0;
+    z-index: 98;
+    opacity: 1;
+  }
+  .navbar{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  .navbar .humb{
+    display: flex;
+    justify-content: center;
+    z-index: 99;
+    margin-left: 70px;
+  }
+}

@@ -1,0 +1,25 @@
+.form {
+  padding: 3rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+ input,textarea{
+  margin: 2rem;
+  text-align: start;
+  padding: 1rem ;
+  width: 50%;
+  border-radius: .8rem;
+  border-width: .5px;
+}
+
+@media screen and (max-width:850px) {
+  .form {
+    padding: 0rem;
+  }
+  input,textarea{
+    margin: 1rem 0;
+    width: 70%;
+  }
+}
